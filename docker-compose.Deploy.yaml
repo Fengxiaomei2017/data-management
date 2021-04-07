@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  frontend:
+    image: basic-data-frontend
+    container_name: basic-data-frontend
+    expose:
+      - 5000
+    restart: always
+
+networks: 
+  default:
+    external: 
+      name: internal-network
